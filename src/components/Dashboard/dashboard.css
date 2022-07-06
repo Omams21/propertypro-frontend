@@ -1,0 +1,154 @@
+.sidebar_container{
+    width: 20vw;
+    height: 100vh;
+    background-color: black;
+}
+.dashboard-container{
+    display: flex;
+    height: 100vh;
+}
+ 
+.dashboard_logo{
+    padding: 1rem;
+    display: flex;
+}
+
+.dashboard_logo> i {
+ color:#0000FF;
+ font-size: 2rem;
+ padding: 1rem;
+ /* margin-top: 25px; */
+}
+
+.logo_name{
+    font-size: 24px;
+    color:#0000FF;
+   align-self: center;
+    margin-right: 50px;
+}
+.agent_info{
+    display: flex;
+    padding: 1rem;
+    border-top: 1px solid wheat;
+    border-bottom: 1px solid wheat;
+}
+.agent_img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.agent_details{
+    margin-left: 10px;
+    font-weight: 300;
+    color: white;
+}
+
+.dashboard_image{
+    size: 5px;
+    color: white;
+
+}
+
+.title{
+    /* color: black; */
+    /* font-size: 15px; */
+    font-weight: 400;
+}
+.title > a {
+    color: white;
+}
+
+.dashboard_icon{
+    display: flex;
+    padding: 1rem;
+    margin-top: 20px;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+.dashboard_icon:hover{
+    border: 1px solid blue;
+    color: blue;
+}
+.dashboard_icon:hover .title > a {
+    color: blue;
+}
+
+.dashboard_icon > i{
+    margin-right: 10px;
+    /* color */
+}
+
+.Properties{
+    display: flex;
+    padding: 1rem;
+}
+
+.properties_image{
+ size: 5px;
+}
+
+.post_property{
+    display: flex;
+    padding: 1rem;
+}
+
+.post_image{
+    size: 5px;
+}
+
+.profile{
+    display: flex;
+    padding: 1rem;
+}
+.profile_image{
+    size: 5px;
+}
+
+.sign_out{
+    display: flex;
+    padding: 1rem;
+}
+
+.sign_image{
+    size: 5px;
+}
+.header-tag{
+    font-size: 20px;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.welcome-box{
+    border: 1px solid gray;
+    background-color: pink;
+    width: 90vh;
+    height: 20%;
+    margin: 40px 40px 30px;
+}
+
+.welcome-tag{
+    font-size: 20px;
+    /* border-bottom: 1px solid gray; */
+    padding: 20px;
+}
+
+.property-report-div{
+    display: flex;
+    padding:10px;
+    margin-left: 10px;
+    /* justify-content: space-evenly; */
+  
+   
+}
+
+.report-div{
+    font-size: 15px;
+    font-weight: 500;
+    border-right: 2px solid gray;
+    margin-left: 30px;
+}

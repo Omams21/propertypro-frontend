@@ -1,0 +1,66 @@
+.house {
+  width: 30%;
+  box-shadow: rgb(0 0 0 / 10%) 0px 0px 8px;
+  cursor: pointer;
+  padding-bottom: 12px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+.house-img {
+  width: 100%;
+  position: relative;
+}
+.house-img > img {
+  width: 100%;
+}
+.time-posted {
+  background-color: rgb(58, 58, 238);
+  color: white;
+  font-size: 12px;
+  width: 45%;
+  border-radius: 2px;
+  padding: 3px;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  text-transform: uppercase;
+}
+
+.text-icon {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: violet;
+  margin-right: 5px;
+}
+.house-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+}
+.bold {
+  font-weight: 700;
+}
+.House-description {
+  margin-left: 10px;
+}
+.amount {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 2px;
+}
+.house-specification {
+  margin-bottom: 2px;
+}
+
+.property-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .house {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+}

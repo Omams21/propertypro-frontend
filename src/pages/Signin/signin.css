@@ -1,0 +1,171 @@
+.companyLogo{
+    display: flex;
+    justify-content: center;
+}
+
+.companyLogo > i {
+    font-size: 30px;
+    color:blue;
+    font: Georgia (serif);
+  }
+  .name{
+    color: blue;
+    font-style: Georgia (serif);
+    font-size: 20px;
+  }
+@media  screen and (min-width:768px){
+.companyLogo{
+
+    margin-left:80px;
+  }
+  .companyLogo > i {
+    font-size: 45px;
+    color:blue;
+    font: Georgia (serif);
+  }
+  .name{
+    color: blue;
+    font-style: Georgia (serif);
+    font-size: 30px;
+  }
+}
+.signinwrap{
+    width: 30%;
+    margin: 0 auto;
+    height: 550px;
+    box-shadow: 0px 4px 24px -1px rgba(0,0,0,0.83);
+    -webkit-box-shadow: 0px 4px 24px -1px rgba(0,0,0,0.83);
+    -moz-box-shadow: 0px 4px 24px -1px rgba(0,0,0,0.83);
+    padding: 30px;
+    /* background-image: url("/src/assets/zac-gudakov-wwqZ8CM21gg-unsplash.jpg"); */
+    /* display: flex; */
+    /* align-items: center; */
+  
+}
+
+.firstcontainer{
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.sign{
+  font-size: 16px;
+  font-style: italic;
+}
+.top{
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+.btn {
+    margin: 15px;
+    padding: 5px; 
+    background-color:rgb(0, 187, 255);
+   color: white;
+    font-size: 17px;
+    cursor: pointer;
+    border: white;
+  }  
+  .btn:hover {
+    background-color:rgb(54, 54, 208);
+    color: white;
+    }
+.psw{
+    display: flex;
+    justify-content: center;
+    color:rgb(0, 187, 255) ;
+    margin: 5px;
+} 
+
+
+
+.secondcontainer{
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    /* padding: 10px; */
+}
+
+.connect{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.socials{
+    margin-bottom: 12px;
+    padding: 5px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.apple > i{
+    font-size: 20px;
+  margin-left: 15px;
+    margin-right: 35px;
+    color:white;
+}
+
+
+.apple{
+    border: 1px solid black;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    cursor: pointer;
+    margin:5px;
+}
+
+.apple:hover{
+    background-color:rgb(54, 54, 208);
+    color: white; 
+}
+.span{
+    text-align: center;
+    /* justify-self: center; */
+    color: white;
+}
+
+.facebook{
+    border: 1px solid black;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(83, 83, 225);
+    cursor: pointer; 
+    margin: 5px;
+}
+.facebook > i {
+    font-size: 20px;
+    margin-left: 15px;
+      margin-right: 35px;
+      color:white;
+}
+.facebook:hover{
+    background-color:rgb(54, 54, 208);
+    color: white; 
+}
+.google{
+    border: 1px solid black;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    cursor: pointer; 
+    margin:5px;
+}
+
+.google > i{
+    font-size: 20px;
+    margin-left: 15px;
+      margin-right: 35px;
+      color:black;
+}
+.google:hover{
+    background-color:rgb(54, 54, 208);
+    color: white; 
+}

@@ -1,0 +1,131 @@
+.box{
+    /* width: 30%;
+    margin-top: 0px;
+    height: 630px;
+    box-shadow: 0px 4px 24px -1px rgba(0,0,0,0.83);
+    -webkit-box-shadow: 0px 4px 24px -1px rgba(0,0,0,0.83);
+    -moz-box-shadow: 0px 4px 24px -1px rgba(0,0,0,0.83);
+    padding: 30px; */
+    width: 30%;
+    margin: 0 auto;
+    height: 670px;
+    box-shadow: 0px 4px 24px -1px rgba(0,0,0,0.83);
+    -webkit-box-shadow: 0px 4px 24px -1px rgba(0,0,0,0.83);
+    -moz-box-shadow: 0px 4px 24px -1px rgba(0,0,0,0.83);
+    padding: 30px;
+}
+
+.firstcontainer{
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    margin-top: 30px;
+    /* margin-bottom: 30px;
+    margin-top: 30px; */
+}
+.sign{
+    font-size: 16px;
+    font-style: italic;
+  }
+
+  .top{
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+#agentver{
+    cursor: pointer;
+}
+   
+.terms{
+    display: flex;
+    justify-content: center;
+    color:rgb(19, 173, 233) ;
+    margin: 3px;
+}
+
+@media  screen and (min-width:768px){
+    .companyLogo{
+       margin-top: 5px;
+        margin-right:80px;
+      }
+      .companyLogo > i {
+        font-size: 45px;
+        color:blue;
+        font: Georgia (serif);
+      }
+      .name{
+        color: blue;
+        font-style: Georgia (serif);
+        font-size: 30px;
+      }
+
+
+.apple > i{
+    font-size: 20px;
+  margin-left: 15px;
+    margin-right: 35px;
+    color:white;
+}
+
+
+.apple{
+    border: 1px solid black;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    cursor: pointer;
+    margin:5px;
+}
+
+.apple:hover{
+    background-color:rgb(54, 54, 208);
+    color: white; 
+}
+.span{
+    text-align: center;
+    /* justify-self: center; */
+    color: white;
+}
+
+.facebook{
+    border: 1px solid black;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(83, 83, 225);
+    cursor: pointer; 
+    margin: 5px;
+}
+.facebook > i {
+    font-size: 20px;
+    margin-left: 15px;
+      margin-right: 35px;
+      color:white;
+}
+.facebook:hover{
+    background-color:rgb(54, 54, 208);
+    color: white; 
+}
+.google{
+    border: 1px solid black;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    cursor: pointer; 
+    margin:5px;
+}
+
+.google > i{
+    font-size: 20px;
+    margin-left: 15px;
+      margin-right: 35px;
+      color:black;
+}
+.google:hover{
+    background-color:rgb(54, 54, 208);
+    color: white; 
+}
+}

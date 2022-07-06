@@ -1,0 +1,54 @@
+.post_a_property{
+    /* box-sizing: inherit; */
+    width: 60%;
+    margin: 0.1rem auto;
+    border: 1px solid gray;
+    /* height: 80vh; */
+    /* align-self: center; */
+    /* margin: 0 auto; */
+}
+
+
+
+.heading{
+    font-weight: 500;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 2px;
+    background-color: rgb(99, 99, 240);
+    color: white;
+    margin-bottom: 30px;
+}
+.agent_info{
+     
+    /* margin-right: 5px; */
+    margin-left: 20px;
+   /* margin: 8px; */
+}
+.about_me{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.property_details{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.property_location{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.photo_card{
+    margin-left: 20px;
+    border: rgb(127, 127, 235);
+    border-style: dashed ;
+    margin-top: 10px;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 30px;
+    padding: 5px;
+}
+.add_photo{
+    justify-content: center;
+}
+

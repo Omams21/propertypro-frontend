@@ -1,0 +1,17 @@
+.background {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+     background-image: url("/src/assets/zac-gudakov-wwqZ8CM21gg-unsplash.jpg");
+    background-position: 50%;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+@media screen and (min-width:768px) {
+    .background {
+        /* background-size : contain; */
+        background:none;
+    }
+
+    
+}
