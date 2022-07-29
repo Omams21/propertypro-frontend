@@ -2,13 +2,16 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import { Dashboard } from '../../Dashboard/Dashboard';
 import './style.css'
+import { useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const url = "http://localhost:4000/v1/agent/property";
 
 const AgentProperties = () => {
 
+ const navigate = useNavigate()
+
     const token =  localStorage.getItem("token")
-    console.log(token)
 
     const config = {
         headers : {
@@ -27,7 +30,16 @@ const AgentProperties = () => {
         getAgentProperties();
     }, [])
 
-    console.log(agentProperties);
+    const deleteItem = async(id) => {
+      const removeProperty = agentProperties.filter((item) => item.id !== id)
+setAgentProperties(removeProperty)
+      try {
+        const response = await axios.delete(`http://localhost:4000/v1/agent/property/${id}`, config)
+      } catch (error) {
+        console.log(error)
+      }
+    }
+
   return ( 
     <>
     {/* <Dashboard /> */}
@@ -59,12 +71,16 @@ const AgentProperties = () => {
 
             <div className="change_buttons">
               <p>
-                <button className="change_section" class="btn">
+                <button className="change_section" class="btn" onClick={()=> deleteItem(item.id)}>
                   DELETE
                 </button>
               </p>
               <p>
-                <button className="change_section" class="btn">
+                <button className="change_section" class="btn" onClick={
+                  (id) =>{
+                    navigate(`/edit/${item.id}`)
+                  }
+                }>
                   EDIT
                 </button>
               </p>

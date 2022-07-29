@@ -1,21 +1,19 @@
 import Homepage from "./pages/Homepage/Homepage";
-// import Midsection from './components/Midsection/Midsection';
-// import Signin from './pages/Signin/Signin';
-// import Signup from './pages/Signup/Signup';
+
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Signup from "./pages/Signup/Signup";
 import SignIn from "./pages/Signin/Signin";
-// import Uploadproperty   from './pages/Uploadproperty/Uploadproperty';
+
 import Buy from "./pages/Buy/Buy";
 import { Dashboard, PostProperty } from "./components/Dashboard/Dashboard";
 import Rent from "./pages/Rent/Rent";
 import Profile from "./pages/Profile/Profile";
 import Myproperty from "./pages/Myproperty/Myproperty";
-// import SignIn from './pages/Signin/Signin';
-// import Signup from './pages/Signup/Signup';
+
 import { ProtectedRoute } from "./protectedRoute";
 import Uploadproperty from "./pages/Uploadproperty/Uploadproperty";
 import AgentProperties from "./components/Agentprofile/AgentProperties/AgentProperties";
+import Edit from "./components/edit/Edit";
 
 const App = () => {
   return (
@@ -39,7 +37,7 @@ const App = () => {
 
           <Route path="/properties" element={<Myproperty />}></Route>
           <Route path="/agent/properties" element={<AgentProperties />}></Route>
-          
+          <Route path="/edit/:id" element={<Edit />}/>
         </Routes>
       </Router>
     </div>
