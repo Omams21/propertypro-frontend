@@ -11,7 +11,7 @@ const Navbar = () => {
         <span className="navbar-link "> <Link to="/buy">BUY</Link></span>
         <span className="navbar-link "> <Link to="/rent">RENT</Link></span>
         <span className="navbar-link ">
-        <Link to="/upload-property">UPLOAD PROPERTY</Link></span>
+        <Link to="/properties">PROPERTIES</Link></span>
       </div>
       <div className = "navbar-icon">
           <i className="fa fa-bars"></i>

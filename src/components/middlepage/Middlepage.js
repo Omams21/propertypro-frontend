@@ -9,11 +9,11 @@ const Middlepage = () => {
                         <div class="change">
                             <h1> We help you find the perfect home.</h1>
                         </div>
-                        <input
+                        {/* <input
                             type="text"
                             placeholder="Enter A Neighborhood"
                             class="search-input-field"
-                        />
+                        /> */}
                         </section>
                  </div>
      
