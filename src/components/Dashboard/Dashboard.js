@@ -22,16 +22,18 @@ export const Dashboard = (props) => {
           </div>
           <div className=" dashboard_icon">
             <i className="icon" class="fa fa-th-large" aria-hidden="true"></i>
-            <p className=" title">
-              <p className="title">
-                <Link to="/dashboard">Dashboard</Link>
-              </p>
+            {/* <p className=" title"> */}
+            <p className="title">
+              <Link to="/dashboard">Dashboard</Link>
             </p>
+            {/* </p> */}
           </div>
 
           <div className=" dashboard_icon">
             <i className="icon" class="fa fa-building-o" aria-hidden="true"></i>
-            <p className="title"> My Properties</p>
+            <p className="title">
+              <Link to="/agent/properties">My Properties</Link>
+            </p>
           </div>
 
           <div className="dashboard_icon">
@@ -53,33 +55,24 @@ export const Dashboard = (props) => {
           <div className="dashboard_icon">
             <i className="icon" class="fa fa-sign-out" aria-hidden="true"></i>
             <p className="title">
-                <Link to="/">Sign Out</Link>
-              </p>
+              <Link to="/">Sign Out</Link>
+            </p>
           </div>
         </div>
-           </div>
-
-           <div className="right-container">
-             <p className="header-tag"> Dashboard</p>
-             <div className="welcome-box" >
-                <p className="welcome-tag"> Welcome back, Kemi  </p>
-                {/* <p> This is your property portfolio report</p> */}
-                {/* <span className="property-report-div">
-                  <p className="report-div"> PROPERTY REPORT</p>
-                  <p className="report-div"> 63 Vacant</p>
-                  <p className="report-div"> 320 Occupied</p>
-                </span> */}
-             </div>
-
-                <div className="New-application-box">
-                  <img src="form-icons.png"/>
-
-
-                </div>
-
       </div>
 
-      {props.hello}
+      <div className="right-container">
+        <p className="header-tag"> Dashboard</p>
+        <div className="welcome-box">
+          <p className="welcome-tag"> Welcome back, Kemi </p>
+         
+        </div>
+
+        <div className="New-application-box">
+          <img src="form-icons.png" alt="form" />
+        </div>
+      </div>
+
     </div>
   );
 };
@@ -87,7 +80,7 @@ export const Dashboard = (props) => {
 export const PostProperty = () => {
   return (
     <>
-      <Dashboard hello={<Uploadproperty />} />
+      <Uploadproperty />
     </>
   );
 };

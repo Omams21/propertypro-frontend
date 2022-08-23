@@ -1,108 +1,103 @@
 #header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0;
-    padding: 20px ;
-  }
-  
-  /* .navbar-link {
-    display: block;
-    color: white;
-    font-size: medium; */
-    /* margin-top: 3px; */
-  /* } */
-  .navbar-link-first-child{
-      display: none;
-  }
-.navbar-icon > i {
-     color: white;
-      font-size: 30px;  
-    /* margin-bottom: 100px;  */
-   } 
-  .navbar-link-second-child{
-      display: flex;
-      color: white;
-      font-size: 20px;
-      /* text-align: left 2px; */
-      margin-right: 10PX;
-    }
- 
-    .companyLogo{
-     display: flex;
-    }
-    .companyLogo > i {
-      font-size: 30px;
-      color:white;
-    }
-    .name{
-      color: white;
-      font-style: Georgia (serif);
-      font-size: 20px;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 20px;
+}
 
-@media  screen and (min-width:768px) {
-.header{
+.navbar-link-first-child {
+  display: none;
+}
+.navbar-icon > i {
+  color: white;
+  font-size: 30px;
+  /* margin-bottom: 100px;  */
+}
+.navbar-link-second-child {
+  display: flex;
+  color: white;
+  font-size: 20px;
+  /* text-align: left 2px; */
+  margin-right: 10px;
+}
+
+.companyLogo {
+  display: flex;
+}
+.companyLogo > i {
+  font-size: 30px;
+  color: white;
+}
+.name {
+  color: white;
+  font-style: Georgia (serif);
+  font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
     display: flex;
   }
-  .navbar-icon > i{
+  .navbar-icon > i {
     display: none;
     /* color: black; */
   }
-.navbar-link-first-child{
-  /* display: flex;
+  .navbar-link-first-child {
+    /* display: flex;
   justify-content: space-between;
   font-size: 20px;
   font-style: arial black;
    justify-content: center;  */
-   display: flex;
-   color: black;
-   justify-content: space-between;
+    display: flex;
+    color: black;
+    justify-content: space-between;
     align-items: center;
-   font-style: arial black;
-   font-size: 20px;
-  
-}
+    font-style: arial black;
+    font-size: 20px;
+  }
 
-.navbar-link{
-  margin-right: 20px;
-  cursor: pointer;
-}
-.navbar-link:hover{
-  color: blue;
-}
-.navbar-link-1{
-  margin-right: 20px;
-  cursor: pointer;
-}
-.navbar-link-1:hover{
+  .navbar-link {
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  .navbar-link:hover {
     color: blue;
-}
+  }
+  .navbar-link-1 {
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  .navbar-link-1:hover {
+    color: blue;
+  }
 
-.companyLogo{
-  /* margin-inline-end: 220px; */
-  margin-left: 100px;
+  .companyLogo {
+    /* margin-inline-end: 220px; */
+    margin-left: 100px;
+  }
+  @media screen and (max-width: 768px) {
+    .companyLogo {
+      margin-left: 0px;
+    }
+  }
+  .companyLogo > i {
+    font-size: 45px;
+    color: blue;
+    font: Georgia (serif);
+  }
+  .name {
+    color: blue;
+    font-style: Georgia (serif);
+    font-size: 30px;
+    margin-right: 50px;
+  }
+  .navbar-link-second-child {
+    color: black;
+    margin-inline-end: 10px;
+    font-size: 20px;
+  }
+  .navbar-link-1 > a:hover {
+    color: blue;
+  }
 }
-.companyLogo > i {
-  font-size: 45px;
-  color:blue;
-  font: Georgia (serif);
-}
-.name{
-  color: blue;
-  font-style: Georgia (serif);
-  font-size: 30px;
-  margin-right: 180px;
-}
-.navbar-link-second-child{
-  color: black;
-  margin-inline-end: 10px;
-  font-size: 20px;
-}
-.navbar-link-1>a:hover{
-  color: blue;
-}
-
-
-}
-
