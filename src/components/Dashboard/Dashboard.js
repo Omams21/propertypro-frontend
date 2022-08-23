@@ -65,19 +65,14 @@ export const Dashboard = (props) => {
         <p className="header-tag"> Dashboard</p>
         <div className="welcome-box">
           <p className="welcome-tag"> Welcome back, Kemi </p>
-          {/* <p> This is your property portfolio report</p> */}
-          {/* <span className="property-report-div">
-                  <p className="report-div"> PROPERTY REPORT</p>
-                  <p className="report-div"> 63 Vacant</p>
-                  <p className="report-div"> 320 Occupied</p>
-                </span> */}
+         
         </div>
 
         <div className="New-application-box">
           <img src="form-icons.png" alt="form" />
         </div>
       </div>
-      {props.hello}
+
     </div>
   );
 };

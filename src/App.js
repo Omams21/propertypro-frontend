@@ -5,7 +5,7 @@ import Signup from "./pages/Signup/Signup";
 import SignIn from "./pages/Signin/Signin";
 
 import Buy from "./pages/Buy/Buy";
-import { Dashboard, PostProperty } from "./components/Dashboard/Dashboard";
+import { Dashboard } from "./components/Dashboard/Dashboard";
 import Rent from "./pages/Rent/Rent";
 import Profile from "./pages/Profile/Profile";
 import Myproperty from "./pages/Myproperty/Myproperty";
@@ -30,14 +30,21 @@ const App = () => {
 
           <Route path="/rent" element={<Rent />}></Route>
 
-          <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>}></Route>
+          <Route
+            path="/dashboard"
+            element={
+              <ProtectedRoute>
+                <Dashboard />
+              </ProtectedRoute>
+            }
+          ></Route>
           <Route path="/post-property" element={<Uploadproperty />} />
 
           <Route path="/profile" element={<Profile />}></Route>
 
           <Route path="/properties" element={<Myproperty />}></Route>
           <Route path="/agent/properties" element={<AgentProperties />}></Route>
-          <Route path="/edit/:id" element={<Edit />}/>
+          <Route path="/edit/:id" element={<Edit />} />
         </Routes>
       </Router>
     </div>

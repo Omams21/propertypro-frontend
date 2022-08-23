@@ -5,13 +5,12 @@ import Navbar from "../../components/navbar/Navbar";
 import "./myproperty.css";
 import axios from "axios";
 
-const url = "http://localhost:4000/v1/properties";
 
 const Myproperty = () => {
   const [properties, setProperties] = useState([]);
 
   const getProperties = async () => {
-    const { data } = await axios.get(url);
+    const { data } = await axios.get(`${process.env.REACT_APP_API_URL}/properties`);
     setProperties(data);
     console.log(properties);
   };

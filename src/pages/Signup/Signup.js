@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setCurrentUser, signupError } from "../../slice/signupslice";
 
-const url = "http://localhost:4000/v1/signup";
 
 function Signup() {
   const navigate = useNavigate();
@@ -20,7 +19,7 @@ function Signup() {
     e.preventDefault();
     try {
       const userDetails = { firstName, lastName, email, password, phoneNumber };
-      const response = await axios.post(url, { ...userDetails });
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/signup`, { ...userDetails });
       console.log(response);
       const {token} = response.data
       localStorage.setItem("token", token);

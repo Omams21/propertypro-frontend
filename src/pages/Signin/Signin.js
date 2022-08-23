@@ -5,7 +5,6 @@ import { setCurrentUser } from "../../slice/signupslice";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const url = "http://localhost:4000/v1/login";
 
 
 export default function SignIn() {
@@ -16,11 +15,10 @@ const navigate = useNavigate()
 
   const handleSubmit = async() => {
    const userInfo = {email, password}
-   const {data} = await axios.post(url,userInfo)
+   const {data} = await axios.post(`${process.env.REACT_APP_API_URL}/login`,userInfo)
    const {token} = data
    localStorage.setItem("token", token)
   navigate('/dashboard')
-   console.log(token)
   }
   return (
     <div className="signinwrap">

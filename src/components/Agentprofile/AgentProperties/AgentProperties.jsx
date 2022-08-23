@@ -5,7 +5,7 @@ import './style.css'
 import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
-const url = "http://localhost:4000/v1/agent/property";
+// const url = "http://localhost:4000/v1/agent/property";
 
 const AgentProperties = () => {
 
@@ -21,7 +21,7 @@ const AgentProperties = () => {
     const [agentProperties, setAgentProperties] = useState([])
 
     const getAgentProperties = async () => {
-        const response = await axios.get(url, config)
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/agent/property`, config)
         const {data} = response
         setAgentProperties(data)
     }
@@ -34,7 +34,7 @@ const AgentProperties = () => {
       const removeProperty = agentProperties.filter((item) => item.id !== id)
 setAgentProperties(removeProperty)
       try {
-        const response = await axios.delete(`http://localhost:4000/v1/agent/property/${id}`, config)
+        const response = await axios.delete(`${process.env.REACT_APP_API_URL}/agent/property/${id}`, config)
       } catch (error) {
         console.log(error)
       }

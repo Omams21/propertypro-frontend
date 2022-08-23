@@ -1,12 +1,13 @@
 import "./uploadproperty.css";
 import axios from "axios";
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { Dashboard } from "../../components/Dashboard/Dashboard";
 
-const url = "http://localhost:4000/v1/agent/properties";
 
 const Uploadproperty = () => {
   const token = localStorage.getItem("token");
+  const navigate = useNavigate();
   console.log(token);
   let config = {
     headers: {
@@ -39,12 +40,13 @@ const Uploadproperty = () => {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // const formData = new FormData();
-
-    // formData.append("file", file);
-    // formData.append("propertyInfo", JSON.stringify(inputProperties));
     try {
-      const response = await axios.post(url, inputProperties, config);
+      const response = await axios.post(
+        `${process.env.REACT_APP_API_URL}/agent/properties`,
+        inputProperties,
+        config
+      );
+      navigate("/agent/properties");
       console.log(response);
     } catch (error) {
       console.log(error);
@@ -54,13 +56,10 @@ const Uploadproperty = () => {
 
   return (
     <>
-    {/* <Dashboard /> */}
+      {/* <Dashboard /> */}
       <div className="post_a_property">
         <div className="house_description">
-          <h1 className="heading">
-            {" "}
-           TITLE & DESCRIPTION 
-          </h1>
+          <h1 className="heading"> TITLE & DESCRIPTION</h1>
           <span className="property_details">
             {" "}
             <textarea
@@ -97,10 +96,7 @@ const Uploadproperty = () => {
         </div>
 
         <div className="house_location">
-          <h1 className="heading">
-            {" "}
-            LOCATION 
-          </h1>
+          <h1 className="heading"> LOCATION</h1>
           <div>
             <span className="property_location">
               {" "}
@@ -174,10 +170,7 @@ const Uploadproperty = () => {
         </div>
 
         <div className="house_description">
-          <h1 className="heading">
-            {" "}
-             PROPERTY DETAILS 
-          </h1>
+          <h1 className="heading"> PROPERTY DETAILS</h1>
           <span className="property_details">
             {" "}
             <textarea

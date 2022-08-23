@@ -50,7 +50,7 @@ const Edit = () => {
       // formData.append("file", file);
       // formData.append("propertyInfo", JSON.stringify(inputProperties));
       try {
-        const response = await axios.put(`http://localhost:4000/v1/agent/property/${id}`, inputProperties, config);
+        const response = await axios.put(`${process.env.REACT_APP_API_URL}/agent/property/${id}`, inputProperties, config);
         console.log(response);
       } catch (error) {
         console.log(error);
