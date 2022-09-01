@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios';
 import { useState } from 'react';
+import {  useNavigate } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 
 
@@ -13,6 +14,7 @@ const Edit = () => {
 
     console.log(id)
     const token = localStorage.getItem("token");
+    const navigate = useNavigate();
     console.log(token);
     let config = {
       headers: {
@@ -51,6 +53,7 @@ const Edit = () => {
       // formData.append("propertyInfo", JSON.stringify(inputProperties));
       try {
         const response = await axios.put(`${process.env.REACT_APP_API_URL}/agent/property/${id}`, inputProperties, config);
+        navigate("/agent/properties");
         console.log(response);
       } catch (error) {
         console.log(error);
